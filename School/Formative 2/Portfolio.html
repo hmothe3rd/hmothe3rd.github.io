@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color {
+            color: rgb(0, 0, 0);
+        }
+
+        body{
+            padding: 1rem;
+        }
+        .border {
+                max-width: calc(100vw - 80px); /* Adjust width to fit within viewport */
+                width: 70%; /* Make sure it fills the available width */
+                border: 10px solid rgb(208, 105, 26);
+                padding: 30px;
+                margin: 20px auto; /* Center the container horizontally */
+                display: grid; /* Use grid for layout */
+                grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+                grid-template-rows: repeat(3, auto); /* 3 rows with auto height */
+                gap: 20px; /* Gap between grid items */
+            }
+
+        .position{
+            position: absolute; /* Set the positioning to absolute */
+            top: 50%; /* Position from the top */
+            left: 50%; /* Position from the left */
+            transform: translate(-50%, -50%); /* Center the element */
+        }
+
+        .h1{
+            color: rgb(0, 0, 0);
+            text-align: center; /* Align the text to the center */
+            margin-top: 20px; /* Add some top margin for spacing */
+        }
+
+        .sline {
+            width: 103%; /* Set line width */
+            border-top: 1px solid black; /* Style line as solid with black color */
+            margin-bottom: 10px; /* Add margin below line for spacing */
+        }
+
+        /* Style the headings within the bordered div */
+        .border h3 {
+            margin: 0; /* Remove default margin */
+            padding: 10px; /* Add some padding */
+            text-align: center; /* Align text to center */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1">My Portfolio</h1> 
+    <div class="border position color">
+
+        <div><img src="../../images/My_pic.jpg" alt="My Picture" height="200px" ></div>
+        
+        <div></div>
+
+        <div class="section">
+            <div class="sline"></div>
+
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem fugit cum assumenda, ad fuga iste nisi, doloribus sunt perferendis saepe molestiae facilis voluptatibus distinctio suscipit numquam hic. Sunt, repellat.</p>
+        </div> 
+
+       <div class="section">
+        <div class="sline"></div>
+
+            <h3>Education</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem fugit cum assumenda, ad fuga iste nisi, doloribus sunt perferendis saepe molestiae facilis voluptatibus distinctio suscipit numquam hic. Sunt, repellat.</p>
+        </div>
+
+        <div class="section">
+            <h3>Expertise</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem fugit cum assumenda, ad fuga iste nisi, doloribus sunt perferendis saepe molestiae facilis voluptatibus distinctio suscipit numquam hic. Sunt, repellat.</p>
+        </div>
+
+        <div class="section">
+            <h3>Experience</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem fugit cum assumenda, ad fuga iste nisi, doloribus sunt perferendis saepe molestiae facilis voluptatibus distinctio suscipit numquam hic. Sunt, repellat.</p>
+        </div>
+
+        <div class="section">
+            <h3>Reference</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem fugit cum assumenda, ad fuga iste nisi, doloribus sunt perferendis saepe molestiae facilis voluptatibus distinctio suscipit numquam hic. Sunt, repellat.</p>
+        </div>
+
+        <div class="section">
+            <h3>Award/Certificates</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem fugit cum assumenda, ad fuga iste nisi, doloribus sunt perferendis saepe molestiae facilis voluptatibus distinctio suscipit numquam hic. Sunt, repellat.</p>
+        </div>
+    </div>
+</body>
+</html>

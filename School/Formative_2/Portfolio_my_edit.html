@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black; /* Set the background color of the body to black */
+            color: white; /* Set the default text color to white */
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white; /* Set the background color of the container */
+            color: black; /* Set the text color to black */
+            border: 10px solid rgb(208, 105, 26); /* Set the border */
+            padding: 20px; /* Add padding */
+            max-width: 800px; /* Limit the maximum width */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto auto; /* Adjusted grid rows */
+            gap: 20px;
+        }
+
+        .name-section {
+            text-align: center; /* Align the text to the center */
+            padding: 0; /* Remove padding */
+            grid-column: span 2; /* Make the name section span both columns */
+            margin-bottom: 20px; /* Add margin below the name section */
+        }
+
+        .name {
+            font-size: 24px; /* Adjust font size of name */
+            margin: 0; /* Remove margin */
+        }
+
+        .sline {
+            position: relative; /* Ensure the container is relatively positioned */
+            margin-bottom: 20px; /* Add margin below line for spacing */
+        }
+
+        .sline::before, .sline::after {
+            content: ''; /* Add empty content */
+            position: absolute; /* Position the pseudo-element */
+            top: 50%; /* Position from the top */
+            width: 50%; /* Set the width to extend to the left/right */
+            height: 1px; /* Set the height */
+            background-color: black; /* Set line color */
+        }
+
+        .sline::before {
+            left: 0; /* Align to the left */
+        }
+
+        .sline::after {
+            right: 0; /* Align to the right */
+        }
+
+        .section {
+            margin-bottom: 20px; /* Add margin between sections */
+        }
+
+        .section h3 {
+            margin-top: 0; /* Remove default top margin for headings */
+        }
+
+        .section ul {
+            list-style-type: disc; /* Bullet points */
+            padding-left: 20px; /* Indentation for bullet points */
+        }
+
+        .image-section {
+            grid-column: 1; /* Set the grid column to the first column */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-image {
+            max-width: 40%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="image-section">
+            <img class="profile-image" src="../../images/My_pic.jpg" alt="My Picture" height="200px">
+        </section>
+
+        <section class="name-section">
+            <div class="name">Herogenes B. Santiago</div>
+        </section>
+
+        <section class="section">
+            <div class="sline"></div>
+            <h3>About</h3>
+            <p>I am an ambitious individual pursuing a Bachelor's degree in Information Technology with a specialization in Business Analytics. Currently in my first year, I am deeply passionate about leveraging technology to drive business insights and innovation.</p>
+        </section>
+
+        <section class="section">
+            <div class="sline"></div>
+            <h3>Education</h3>
+            <ul>
+                <li>FEU Institute of Technology - Bachelor's degree (2023-Ongoing)</li>
+                <li>The Meridian International Learning Experience - Senior High School (2021-2023)</li>
+                <li>International Philippine School Jeddah - High School (2020-2021)</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="sline"></div>
+            <h3>Expertise</h3>
+            <ul>
+                <li>HTML</li>
+                <li>C++</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="sline"></div>
+            <h3>Experience</h3>
+            <ul>
+                <li>Analyzed business data for local companies.</li>
+                <li>Interned at firms, focusing on data analysis projects.</li>
+                <li>Participated in case competitions, applying analytics skills.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="sline"></div>
+            <h3>Reference</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem fugit cum assumenda, ad fuga iste nisi, doloribus sunt perferendis saepe molestiae facilis voluptatibus distinctio suscipit numquam hic. Sunt, repellat.</p>
+        </section>
+
+        <section class="section">
+            <div class="sline"></div>
+            <h3>Award/Certificates</h3>
+            <ul>
+                <li>Academic Excellence Award in Business Analytics.</li>
+                <li>Certificates for analytical problem-solving.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

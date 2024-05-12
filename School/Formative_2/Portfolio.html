@@ -5,93 +5,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .color {
-            color: rgb(0, 0, 0);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        body{
-            padding: 1rem;
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f0f0f0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .border {
-                max-width: calc(100vw - 80px); /* Adjust width to fit within viewport */
-                width: 70%; /* Make sure it fills the available width */
-                border: 10px solid rgb(208, 105, 26);
-                padding: 30px;
-                margin: 20px auto; /* Center the container horizontally */
-                display: grid; /* Use grid for layout */
-                grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
-                grid-template-rows: repeat(3, auto); /* 3 rows with auto height */
-                gap: 20px; /* Gap between grid items */
+
+        section.hero {
+            display: flex;
+            border: solid 5px black;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .left {
+            flex: 1;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .top {
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        p a {
+            cursor: pointer;
+            transition: .3s ease-out;
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+                font-weight: 800;
+                color: rgb(0, 81, 255);
             }
-
-        .position{
-            position: absolute; /* Set the positioning to absolute */
-            top: 50%; /* Position from the top */
-            left: 50%; /* Position from the left */
-            transform: translate(-50%, -50%); /* Center the element */
         }
 
-        .h1{
-            color: rgb(0, 0, 0);
-            text-align: center; /* Align the text to the center */
-            margin-top: 20px; /* Add some top margin for spacing */
+        .links {
+            display: flex;
+            gap: 3rem;
+            font-size: 1rem;
+        }
+
+        .right {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .content {
+            margin-top: 2rem;
+            border-top: solid 5px black;
+            padding: 2.5rem;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content div {
+            margin-bottom: 1rem;
+        }
+
+        .content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            border-bottom: solid 1px black;
+            padding-bottom: 1rem;
+        }
+
+        .section:last-child {
+            border-bottom: none;
         }
 
         .sline {
-            width: 103%; /* Set line width */
-            border-top: 1px solid black; /* Style line as solid with black color */
-            margin-bottom: 10px; /* Add margin below line for spacing */
+            position: relative;
+            margin-bottom: 1rem;
         }
 
-        /* Style the headings within the bordered div */
-        .border h3 {
-            margin: 0; /* Remove default margin */
-            padding: 10px; /* Add some padding */
-            text-align: center; /* Align text to center */
+        .sline::before, .sline::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 50%;
+            height: 1px;
+            background-color: black;
+        }
+
+        .sline::before {
+            left: 0;
+        }
+
+        .sline::after {
+            right: 0;
         }
     </style>
 </head>
 <body>
-    <h1 class="h1">My Portfolio</h1> 
-    <div class="border position color">
+    <section class="hero">
+        <div class="left">
+            <div class="top">
+                <h1>Hermogenes B. Santiago</h1>
+                <h2>Business Analytics</h2>
+                <p>
+                    I am an ambitious individual pursuing a Bachelor's degree in Information Technology with a specialization in Business Analytics. Currently in my first year, I am deeply passionate about leveraging technology to drive business insights and innovation.
+                </p>
+                <p class="email">email me @ <a>hbangeroslll@gmail.com</a></p>
+            </div>
+            <div class="links">
+                <a href=""><p>linkedin</p></a>
+                <a href=""><p>facebook</p></a>
+                <a href=""><p>github</p></a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="../../images/My_pic.jpg" alt="My Picture">
+        </div>
+    </section>
 
-        <div><img src="../../images/My_pic.jpg" alt="My Picture" height="200px" ></div>
-        
-        <div></div>
-
-        <div class="section">
+    <div class="content">
+        <section class="section">
             <div class="sline"></div>
-
-            <h3>About</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem fugit cum assumenda, ad fuga iste nisi, doloribus sunt perferendis saepe molestiae facilis voluptatibus distinctio suscipit numquam hic. Sunt, repellat.</p>
-        </div> 
-
-       <div class="section">
-        <div class="sline"></div>
-
             <h3>Education</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem fugit cum assumenda, ad fuga iste nisi, doloribus sunt perferendis saepe molestiae facilis voluptatibus distinctio suscipit numquam hic. Sunt, repellat.</p>
-        </div>
+            <ul>
+                <li>FEU Institute of Technology - Bachelor's degree (2023-Ongoing)</li>
+                <li>The Meridian International Learning Experience - Senior High School (2021-2023)</li>
+                <li>International Philippine School Jeddah - High School (2020-2021)</li>
+            </ul>
+        </section>
 
-        <div class="section">
+        <section class="section">
             <h3>Expertise</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem fugit cum assumenda, ad fuga iste nisi, doloribus sunt perferendis saepe molestiae facilis voluptatibus distinctio suscipit numquam hic. Sunt, repellat.</p>
-        </div>
+            <ul>
+                <li>HTML</li>
+                <li>C++</li>
+            </ul>
+        </section>
 
-        <div class="section">
+        <section class="section">
             <h3>Experience</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem fugit cum assumenda, ad fuga iste nisi, doloribus sunt perferendis saepe molestiae facilis voluptatibus distinctio suscipit numquam hic. Sunt, repellat.</p>
-        </div>
+            <ul>
+                <li>Analyzed business data for local companies.</li>
+                <li>Interned at firms, focusing on data analysis projects.</li>
+                <li>Participated in case competitions, applying analytics skills.</li>
+            </ul>
+        </section>
 
-        <div class="section">
+        <section class="section">
             <h3>Reference</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem fugit cum assumenda, ad fuga iste nisi, doloribus sunt perferendis saepe molestiae facilis voluptatibus distinctio suscipit numquam hic. Sunt, repellat.</p>
-        </div>
+        </section>
 
-        <div class="section">
+        <section class="section">
             <h3>Award/Certificates</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem fugit cum assumenda, ad fuga iste nisi, doloribus sunt perferendis saepe molestiae facilis voluptatibus distinctio suscipit numquam hic. Sunt, repellat.</p>
-        </div>
+            <ul>
+                <li>Academic Excellence Award in Business Analytics.</li>
+                <li>Certificates for analytical problem-solving.</li>
+            </ul>
+        </section>
     </div>
 </body>
 </html>

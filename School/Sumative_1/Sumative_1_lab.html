@@ -1,18 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HTML BASIC - TAGS</title>
-    </head>
-        <body>
-            <table border= “1” align= “center”>
-                <tr>
-            <th>code</th> <th>Subject</th> <th>Subject 2</th> <th>Subject 2</th> <th>Subject 2</th> <th>body</th>
-            </tr>
-            <tr align= “center”>
-                    <th>ITWEBDES</th> <th>Basic Web Design</th> <th>body</th> <th>body</th> <th>body</th> <th>body</th>
-            </tr>
-            </table>            
-        </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML BASIC - TAGS</title>
+
+<style>
+    section.hero,
+    section.hero * {
+    outline: 1px dashed rgb(255, 47, 0);
+    }
+
+    .first-row th {  /* Target all table header (<th>) elements in the first row */
+    background-color: rgba(78, 78, 231, 0.541);  /* Set your desired blue color */
+    }
+
+</style>
+
+</head>
+<body>
+<section class="hero">
+    <table border="1" align="center">
+    <tr class="first-row">
+        <th colspan="6">Inventory System</th>
+    </tr>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Supplier</th>
+        <th>Date</th>
+        <th>Image</th>
+    </tr>
+    <tr>
+        <td>1201</td>
+        <td>7UP® Cherry Flavored Soda</td>
+        <td>300</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+    </tr>
+    <tr>
+        <td>1202</td>
+        <td>7UP® Simple - Lemon-Lime Flavored Sod</td>
+        <td>1000</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+    </tr>
+    <tr>
+        <td>1203</td>
+        <td>7UP® Zero Sugar Lemon-Lime Flavored Soda</td>
+        <td>500</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+    </tr>
+    <tr>
+        <td>1204</td>
+        <td>7UP® Tropical Flavored Soda</td>
+        <td>250</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+    </tr>
+    <tr>
+        <td>1205</td>
+        <td>7UP® Lemon-Lime Flavored Soda</td>
+        <td>250</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+    </tr>
+    <tr>
+        <td>1206</td>
+        <td>7UP® Lemon-Lime Flavored Fountain Drink</td>
+        <td>450</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+    </tr>
+    <tr>
+        <td>1207</td>
+        <td>7UP® Zero Sugar Tropical Flavored Soda</td>
+        <td>200</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+    </tr>
+    <tr>
+        <td>1208</td>
+        <td>7UP® Zero Sugar Cherry Flavored Soda</td>
+        <td>200</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td><img src="https://www.google.com/imgres?q=7%20up&imgurl=https%3A%2F%2Fever.ph%2Fcdn%2Fshop%2Fproducts%2F9000002410-7-Up-Regular-PET-1.5L-201120_247987f7-210c-4b2c-9667-790bf50c51d7_580x.jpg%3Fv%3D1707982465&imgrefurl=https%3A%2F%2Fever.ph%2Fproducts%2F9000002410-santolan&docid=xsoPQIz9JDRgQM&tbnid=O-kEqdkygdxmrM&vet=12ahUKEwjhzLjhsJOGAxUDcGwGHbFYDrwQM3oECG4QAA..i&w=580&h=580&hcb=2&ved=2ahUKEwjhzLjhsJOGAxUDcGwGHbFYDrwQM3oECG4QAA" alt="7 up image"></td> </tr>
+    </table>
+</section>
+</body>
 </html>

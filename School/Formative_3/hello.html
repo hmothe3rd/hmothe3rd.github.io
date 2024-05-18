@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Data Form</title>
+    <link rel="stylesheet" href="Info.style.css">
+</head>
+
+<body>
+    <h1>Bio-Data Form</h1>
+    <div class="biodata-form">
+        <form action="#" method="POST">
+            <h2>Personal Information</h2>
+
+            <label for="positionDesired">Position Desired:</label>
+            <input type="text" id="positionDesired" name="positionDesired" placeholder="Enter desired position" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+
+            <label for="middleName">Middle Name:</label>
+            <input type="text" id="middleName" name="middleName" placeholder="Enter middle name">
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+
+            <label for="suffix">Suffix:</label>
+            <input type="text" id="suffix" name="suffix" placeholder="Enter suffix">
+
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname" name="nickname" placeholder="Enter nickname">
+
+            <label for="presentAddress">Present Address:</label>
+            <input type="text" id="presentAddress" name="presentAddress" placeholder="Enter present address" required>
+
+            <label for="permanentAddress">Permanent Address:</label>
+            <input type="text" id="permanentAddress" name="permanentAddress" placeholder="Enter permanent address" required>
+
+            <label for="placeOfBirth">Place of Birth:</label>
+            <input type="text" id="placeOfBirth" name="placeOfBirth" placeholder="Enter place of birth" required>
+
+            <label for="contactNumbers">Contact No(s):</label>
+            <input type="tel" id="contactNumbers" name="contactNumbers" placeholder="Enter contact number(s)" required>
+
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+
+            <label for="gender">Gender:</label>
+            <div id="gender">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+                <input type="text" id="genderOther" name="genderOther" placeholder="Please specify if other">
+            </div>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter age" required>
+
+            <label for="civilStatus">Civil Status:</label>
+            <select id="civilStatus" name="civilStatus" required>
+                <option value="">Select Civil Status</option>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+                <option value="widowed">Widowed</option>
+            </select>
+
+            <label for="religion">Religion:</label>
+            <input type="text" id="religion" name="religion" placeholder="Enter religion" required>
+
+            <label for="citizenship">Citizenship:</label>
+            <input type="text" id="citizenship" name="citizenship" placeholder="Enter citizenship" required>
+
+            <label for="languageSpoken">Language Spoken:</label>
+            <input type="text" id="languageSpoken" name="languageSpoken" placeholder="Enter languages spoken" required>
+
+            <label for="height">Height:</label>
+            <input type="text" id="height" name="height" placeholder="Enter height" required>
+
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" name="weight" placeholder="Enter weight" required>
+
+            <label for="spouseName">Name of Spouse:</label>
+            <input type="text" id="spouseName" name="spouseName" placeholder="Enter spouse's name">
+
+            <label for="spouseOccupation">Occupation:</label>
+            <input type="text" id="spouseOccupation" name="spouseOccupation" placeholder="Enter spouse's occupation">
+
+            <label for="children">Children’s name/s and date of birth:</label>
+            <textarea id="children" name="children" placeholder="Enter children's names and dates of birth"></textarea>
+
+            <label for="fatherName">Father’s Name:</label>
+            <input type="text" id="fatherName" name="fatherName" placeholder="Enter father's name" required>
+
+            <label for="fatherOccupation">Occupation:</label>
+            <input type="text" id="fatherOccupation" name="fatherOccupation" placeholder="Enter father's occupation">
+
+            <label for="motherName">Mother’s Name:</label>
+            <input type="text" id="motherName" name="motherName" placeholder="Enter mother's name" required>
+
+            <label for="motherOccupation">Occupation:</label>
+            <input type="text" id="motherOccupation" name="motherOccupation" placeholder="Enter mother's occupation">
+
+            <label for="emergencyContact">Person to be contacted in case of emergency:</label>
+            <input type="text" id="emergencyContact" name="emergencyContact" placeholder="Enter emergency contact name" required>
+
+            <label for="emergencyAddress">Address:</label>
+            <input type="text" id="emergencyAddress" name="emergencyAddress" placeholder="Enter emergency contact address" required>
+
+            <label for="emergencyRelationship">Relationship:</label>
+            <input type="text" id="emergencyRelationship" name="emergencyRelationship" placeholder="Enter relationship with emergency contact" required>
+
+            <label for="emergencyContactNumbers">Contact No(s):</label>
+            <input type="tel" id="emergencyContactNumbers" name="emergencyContactNumbers" placeholder="Enter emergency contact number(s)" required>
+
+            <h2>Educational Background</h2>
+
+            <label for="elementary">Elementary:</label>
+            <input type="text" id="elementary" name="elementary" placeholder="Enter elementary school name" required>
+
+            <label for="elementaryYears">Years Attended:</label>
+            <input type="text" id="elementaryYears" name="elementaryYears" placeholder="Enter years attended" required>
+
+            <label for="highSchool">High School:</label>
+            <input type="text" id="highSchool" name="highSchool" placeholder="Enter high school name" required>
+
+            <label for="highSchoolYears">Years Attended:</label>
+            <input type="text" id="highSchoolYears" name="highSchoolYears" placeholder="Enter years attended" required>
+
+            <label for="college">College:</label>
+            <input type="text" id="college" name="college" placeholder="Enter college name">
+
+            <label for="collegeYears">Years Attended:</label>
+            <input type="text" id="collegeYears" name="collegeYears" placeholder="Enter years attended">
+
+            <label for="collegeDegree">Degree:</label>
+            <input type="text" id="collegeDegree" name="collegeDegree" placeholder="Enter college degree">
+
+            <label for="vocational">Vocational:</label>
+            <input type="text" id="vocational" name="vocational" placeholder="Enter vocational school name">
+
+            <label for="vocationalYears">Years Attended:</label>
+            <input type="text" id="vocationalYears" name="vocationalYears" placeholder="Enter years attended">
+
+            <label for="vocationalCourse">Course:</label>
+            <input type="text" id="vocationalCourse" name="vocationalCourse" placeholder="Enter vocational course">
+
+            <label for="specialSkills">Special Skills/Talents:</label>
+            <input type="text" id="specialSkills" name="specialSkills" placeholder="Enter special skills or talents">
+
+            <label for="awards">Awards/Honors Received:</label>
+            <input type="text" id="awards" name="awards" placeholder="Enter awards or honors received">
+
+            <label for="organizations">Organizations (if any):</label>
+            <input type="text" id="organizations" name="organizations" placeholder="Enter organizations">
+
+            <label for="professionalExams">Professional Exams Passed:</label>
+            <input type="text" id="professionalExams" name="professionalExams" placeholder="Enter professional exams passed">
+
+            <h2>Employment History</h2>
+
+            <label for="employmentHistory">Employment History:</label>
+            <textarea id="employmentHistory" name="employmentHistory" placeholder="Enter employment history" required></textarea>
+
+            <label for="characterReferences">Character References (Not Relatives):</label>
+            <textarea id="characterReferences" name="characterReferences" placeholder="Enter character references" required></textarea>
+
+            <h2>Certification</h2>
+
+            <p>I certify that all information given above are true and correct to the best of my knowledge. I understand that
+                any misrepresentation or omission of facts called for in this application may be cause for denial of employment
+                or dismissal.</p>
+
+            <label>
+                <input type="radio" name="certificationAcknowledgement" required>
+                I acknowledge and understand the above statement.
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

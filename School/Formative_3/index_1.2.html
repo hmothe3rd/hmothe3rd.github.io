@@ -1,0 +1,376 @@
+<!DOCTYPE html> <!--Last Updated: 2024-05-25-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Data Form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="external_registration.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Bio-Data Form</h1>
+        <form action="#" method="POST">
+            <h2 class="mb-3">Personal Information</h2>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="positionDesired" class="form-label">Position Desired:</label>
+                    <input type="text" class="form-control" id="positionDesired" name="positionDesired"
+                        placeholder="Enter desired position" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="date" class="form-label">Date:</label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="firstName" class="form-label">First Name:</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName"
+                        placeholder="Enter first name" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="middleName" class="form-label">Middle Name:</label>
+                    <input type="text" class="form-control" id="middleName" name="middleName"
+                        placeholder="Enter middle name">
+                </div>
+                <div class="col-md-4">
+                    <label for="lastName" class="form-label">Last Name:</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter last name"
+                        required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="suffix" class="form-label">Suffix:</label>
+                    <input type="text" class="form-control" id="suffix" name="suffix" placeholder="Enter suffix">
+                </div>
+                <div class="col-md-6">
+                    <label for="nickname" class="form-label">Nickname:</label>
+                    <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Enter nickname">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="presentAddress" class="form-label">Present Address:</label>
+                    <input type="text" class="form-control" id="presentAddress" name="presentAddress"
+                        placeholder="Enter present address" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="permanentAddress" class="form-label">Permanent Address:</label>
+                    <input type="text" class="form-control" id="permanentAddress" name="permanentAddress"
+                        placeholder="Enter permanent address" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="placeOfBirth" class="form-label">Place of Birth:</label>
+                    <input type="text" class="form-control" id="placeOfBirth" name="placeOfBirth"
+                        placeholder="Enter place of birth" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="contactNumbers" class="form-label">Contact No(s):</label>
+                    <input type="tel" class="form-control" id="contactNumbers" name="contactNumbers"
+                        placeholder="Enter contact number(s)" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="dateOfBirth" class="form-label">Date of Birth:</label>
+                    <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email Address:</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="Enter email address" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Gender:</label>
+                        <div id="gender">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="male" name="gender" value="male" required>
+                                <label for="male" class="form-check-label">Male</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="female" name="gender" value="female">
+                                <label for="female" class="form-check-label">Female</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="other" name="gender" value="other">
+                                <label for="other" class="form-check-label">Other</label>
+                            </div>
+                            <div class="mt-2">
+                                <input type="text" class="form-control" id="genderOther" name="genderOther" placeholder="Please specify if other">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label for="age" class="form-label">Age:</label>
+                        <input type="number" class="form-control" id="age" name="age" placeholder="Enter age" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="civilStatus" class="form-label">Civil Status:</label>
+                        <select id="civilStatus" name="civilStatus" class="form-select" required>
+                            <option value="">Select Civil Status</option>
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                            <option value="divorced">Divorced</option>
+                            <option value="widowed">Widowed</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="religion" class="form-label">Religion:</label>
+                        <input type="text" class="form-control" id="religion" name="religion"
+                            placeholder="Enter religion" required>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="citizenship" class="form-label">Citizenship:</label>
+                        <input type="text" class="form-control" id="citizenship" name="citizenship"
+                            placeholder="Enter citizenship" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="languageSpoken" class="form-label">Language Spoken:</label>
+                        <input type="text" class="form-control" id="languageSpoken" name="languageSpoken"
+                            placeholder="Enter languages spoken" required>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-3">
+                        <label for="height" class="form-label">Height:</label>
+                        <input type="text" class="form-control" id="height" name="height" placeholder="Enter height"
+                            required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="weight" class="form-label">Weight:</label>
+                        <input type="text" class="form-control" id="weight" name="weight" placeholder="Enter weight"
+                            required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="spouseName" class="form-label">Name of Spouse:</label>
+                        <input type="text" class="form-control" id="spouseName" name="spouseName"
+                            placeholder="Enter spouse's name">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="spouseOccupation" class="form-label">Occupation:</label>
+                        <input type="text" class="form-control" id="spouseOccupation" name="spouseOccupation"
+                            placeholder="Enter spouse's occupation">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label for="children" class="form-label">Children’s name/s and date of birth:</label>
+                        <textarea class="form-control" id="children" name="children"
+                            placeholder="Enter children's names and dates of birth"></textarea>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="fatherName" class="form-label">Father’s Name:</label>
+                        <input type="text" class="form-control" id="fatherName" name="fatherName"
+                            placeholder="Enter father's name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="fatherOccupation" class="form-label">Occupation:</label>
+                        <input type="text" class="form-control" id="fatherOccupation" name="fatherOccupation"
+                            placeholder="Enter father's occupation">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="motherName" class="form-label">Mother’s Name:</label>
+                        <input type="text" class="form-control" id="motherName" name="motherName"
+                            placeholder="Enter mother's name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="motherOccupation" class="form-label">Occupation:</label>
+                        <input type="text" class="form-control" id="motherOccupation" name="motherOccupation"
+                            placeholder="Enter mother's occupation">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="emergencyContact" class="form-label">Person to be contacted in case of
+                            emergency:</label>
+                        <input type="text" class="form-control" id="emergencyContact" name="emergencyContact"
+                            placeholder="Enter emergency contact name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="emergencyAddress" class="form-label">Address:</label>
+                        <input type="text" class="form-control" id="emergencyAddress" name="emergencyAddress"
+                            placeholder="Enter emergency contact address" required>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="emergencyRelationship" class="form-label">Relationship:</label>
+                        <input type="text" class="form-control" id="emergencyRelationship" name="emergencyRelationship"
+                            placeholder="Enter relationship with emergency contact" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="emergencyContactNumbers" class="form-label">Contact No(s):</label>
+                        <input type="tel" class="form-control" id="emergencyContactNumbers"
+                            name="emergencyContactNumbers" placeholder="Enter emergency contact number(s)" required>
+                    </div>
+                </div>
+
+                <h2>Educational Background</h2>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="elementary" class="form-label">Elementary:</label>
+                        <input type="text" class="form-control" id="elementary" name="elementary"
+                            placeholder="Enter elementary school name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="elementaryYears" class="form-label">Years Attended:</label>
+                        <input type="text" class="form-control" id="elementaryYears" name="elementaryYears"
+                            placeholder="Enter years attended" required>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="highSchool" class="form-label">High School:</label>
+                        <input type="text" class="form-control" id="highSchool" name="highSchool"
+                            placeholder="Enter high school name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="highSchoolYears" class="form-label">Years Attended:</label>
+                        <input type="text" class="form-control" id="highSchoolYears" name="highSchoolYears"
+                            placeholder="Enter years attended" required>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="college" class="form-label">College:</label>
+                        <input type="text" class="form-control" id="college" name="college"
+                            placeholder="Enter college name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="collegeYears" class="form-label">Years Attended:</label>
+                        <input type="text" class="form-control" id="collegeYears" name="collegeYears"
+                            placeholder="Enter years attended">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="collegeDegree" class="form-label">Degree:</label>
+                        <input type="text" class="form-control" id="collegeDegree" name="collegeDegree"
+                            placeholder="Enter college degree">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="vocational" class="form-label">Vocational:</label>
+                        <input type="text" class="form-control" id="vocational" name="vocational"
+                            placeholder="Enter vocational school name">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="vocationalYears" class="form-label">Years Attended:</label>
+                        <input type="text" class="form-control" id="vocationalYears" name="vocationalYears"
+                            placeholder="Enter years attended">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="vocationalCourse" class="form-label">Course:</label>
+                        <input type="text" class="form-control" id="vocationalCourse" name="vocationalCourse"
+                            placeholder="Enter vocational course">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="specialSkills" class="form-label">Special Skills/Talents:</label>
+                        <input type="text" class="form-control" id="specialSkills" name="specialSkills"
+                            placeholder="Enter special skills or talents">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="awards" class="form-label">Awards/Honors Received:</label>
+                        <input type="text" class="form-control" id="awards" name="awards"
+                            placeholder="Enter awards or honors received">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="organizations" class="form-label">Organizations (if any):</label>
+                        <input type="text" class="form-control" id="organizations" name="organizations"
+                            placeholder="Enter organizations">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="professionalExams" class="form-label">Professional Exams Passed:</label>
+                        <input type="text" class="form-control" id="professionalExams" name="professionalExams"
+                            placeholder="Enter professional exams passed">
+                    </div>
+                </div>
+
+                <h2>Employment History</h2>
+
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label for="employmentHistory" class="form-label">Employment History:</label>
+                        <textarea class="form-control" id="employmentHistory" name="employmentHistory"
+                            placeholder="Enter employment history" required></textarea>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label for="characterReferences" class="form-label">Character References (Not
+                            Relatives):</label>
+                        <textarea class="form-control" id="characterReferences" name="characterReferences"
+                            placeholder="Enter character references" required></textarea>
+                    </div>
+                </div>
+
+                <h2>Certification</h2>
+
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <p>I certify that all information given above are true and correct to the best of my knowledge.
+                            I understand that
+                            any misrepresentation or omission of facts called for in this application may be cause for
+                            denial of employment
+                            or dismissal.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="certificationAcknowledgement"
+                                name="certificationAcknowledgement" required>
+                            <label for="certificationAcknowledgement" class="form-check-label">I acknowledge and
+                                understand the above statement.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>

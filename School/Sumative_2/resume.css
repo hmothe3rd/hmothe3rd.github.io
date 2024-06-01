@@ -1,0 +1,86 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebar {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 20px;
+}
+.sidebar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+.main-content {
+    flex: 2;
+    margin-right: 20px; /* Add margin to the right */
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+p {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+.links a {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+.links a:hover {
+    color: #0056b3;
+}
+.section-title {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+ul {
+    padding-left: 20px;
+}
+ul li {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+.additional-images img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.profile-image {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 5px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+}
+.main-content p {
+    text-align: justify;
+}

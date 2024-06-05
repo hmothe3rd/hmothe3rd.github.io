@@ -15,6 +15,7 @@ int main() {
     do {
         showMenu();
         cin >> choice;
+        system("cls");
         handleMenuChoice(choice);
     } while (choice != 6);
 

@@ -1,9 +1,8 @@
 #include <iostream>
-using namespace std;
 
 int hcf(int n1, int n2);
 int calculatePower(int base, int powerRaised);
-int fib(int x);
+void generateFibonacciSeries(int x);
 int add(int n);
 int factorial(int n);
 void showMenu();
@@ -14,8 +13,10 @@ int main() {
 
     do {
         showMenu();
-        cin >> choice;
-        system("cls");
+        std::cin >> choice;
+        if (choice != 6) {
+            system("cls");
+        }
         handleMenuChoice(choice);
     } while (choice != 6);
 
@@ -23,75 +24,73 @@ int main() {
 }
 
 void showMenu() {
-    cout << "\nChoose an option:\n";
-    cout << "1. Calculate H.C.F\n";
-    cout << "2. Calculate Power\n";
-    cout << "3. Generate Fibonacci Series\n";
-    cout << "4. Calculate Sum of Natural Numbers\n";
-    cout << "5. Calculate Factorial\n";
-    cout << "6. Exit\n";
-    cout << "Enter your choice: ";
+    std::cout << "\nChoose an option:\n";
+    std::cout << "1. Calculate H.C.F\n";
+    std::cout << "2. Calculate Power\n";
+    std::cout << "3. Generate Fibonacci Series\n";
+    std::cout << "4. Calculate Sum of Natural Numbers\n";
+    std::cout << "5. Calculate Factorial\n";
+    std::cout << "6. Exit\n";
+    std::cout << "Enter your choice: ";
 }
 
 void handleMenuChoice(int choice) {
     switch (choice) {
         case 1: {
             int n1, n2;
-            cout << "Enter two positive integers: ";
-            cin >> n1 >> n2;
-            cout << "H.C.F of " << n1 << " & " <<  n2 << " is: " << hcf(n1, n2) << endl;
+            std::cout << "Enter two positive integers: ";
+            std::cin >> n1 >> n2;
+            std::cout << "H.C.F of " << n1 << " & " << n2 << " is: " << hcf(n1, n2) << std::endl;
             system("pause");
             system("cls");
             break;
         }
         case 2: {
             int base, powerRaised;
-            cout << "Enter base number: ";
-            cin >> base;
-            cout << "Enter power number(positive integer): ";
-            cin >> powerRaised;
+            std::cout << "Enter base number: ";
+            std::cin >> base;
+            std::cout << "Enter power number (positive integer): ";
+            std::cin >> powerRaised;
             int result = calculatePower(base, powerRaised);
-            cout << base << "^" << powerRaised << " = " << result << endl;
+            std::cout << base << "^" << powerRaised << " = " << result << std::endl;
             system("pause");
             system("cls");
             break;
         }
         case 3: {
             int x;
-            cout << "Enter the number of terms of series: ";
-            cin >> x;
-            cout << "Fibonacci Series: ";
-            for (int i = 0; i < x; i++) {
-                cout << fib(i) << " ";
-            }
-            cout << endl;
+            std::cout << "Enter the number of terms of series: ";
+            std::cin >> x;
+            std::cout << "Fibonacci Series: ";
+            generateFibonacciSeries(x);
+            std::cout << std::endl;
             system("pause");
             system("cls");
             break;
         }
         case 4: {
             int n;
-            cout << "Enter a positive integer: ";
-            cin >> n;
-            cout << "Sum = " << add(n) << endl;
+            std::cout << "Enter a positive integer: ";
+            std::cin >> n;
+            std::cout << "Sum = " << add(n) << std::endl;
             system("pause");
             system("cls");
             break;
         }
         case 5: {
             int n;
-            cout << "Enter a positive integer: ";
-            cin >> n;
-            cout << "Factorial of " << n << " = " << factorial(n) << endl;
+            std::cout << "Enter a positive integer: ";
+            std::cin >> n;
+            std::cout << "Factorial of " << n << " = " << factorial(n) << std::endl;
             system("pause");
             system("cls");
             break;
         }
         case 6:
-            cout << "Exiting the program." << endl;
+            std::cout << "Exiting the program." << std::endl;
             break;
         default:
-            cout << "Invalid choice. Please try again." << endl;
+            std::cout << "Invalid choice. Please try again." << std::endl;
             system("pause");
             system("cls");
     }
@@ -100,7 +99,7 @@ void handleMenuChoice(int choice) {
 int hcf(int n1, int n2) {
     if (n2 != 0)
         return hcf(n2, n1 % n2);
-    else 
+    else
         return n1;
 }
 
@@ -111,11 +110,14 @@ int calculatePower(int base, int powerRaised) {
         return 1;
 }
 
-int fib(int x) {
-    if ((x == 1) || (x == 0))
-        return x;
-    else
-        return fib(x - 1) + fib(x - 2);
+void generateFibonacciSeries(int x) {
+    int t1 = 0, t2 = 1, nextTerm;
+    for (int i = 0; i < x; ++i) {
+        std::cout << t1 << " ";
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
 }
 
 int add(int n) {

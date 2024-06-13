@@ -46,7 +46,7 @@ int main()
 
         Exponent(n1, n2, result);
         cout << "\n"
-             << n1 << "^" << n2 << " = " << Exponent(n1, n2, result);
+            << n1 << "^" << n2 << " = " << Exponent(n1, n2, result);
         break;
 
     case 3:
@@ -132,11 +132,24 @@ int SumNatural(int &n1)
 
     for (int i = 1; i <= n1; ++i)
     {
-        SumNatural (n1) += i;
+        SumNatural(n1) += i;
     }
 
     return SumNatural(n1);
 }
+
+// int SumNatural(int n1, int i, int total)
+// {
+//     if (i <= n1)
+//     {
+//         total += i;
+//         return SumNatural(n1, i + 1, total);
+//     }
+//     else
+//     {
+//         return total;
+//     }
+// }
 
 int Factorial(int n1)
 {

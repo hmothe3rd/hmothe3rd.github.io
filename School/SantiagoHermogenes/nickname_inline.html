@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #ffffff; text-align: center; padding: 20px; background-image: url('../../images/David_backgound.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+  <div style="position: relative; z-index: 1; display: flex; align-items: flex-start; justify-content: center; flex-wrap: wrap; gap: 20px; max-width: 800px; margin: 0 auto; border: 1px solid #000000; border-radius: 8px; padding: 20px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.774); background-color: rgb(255, 187, 0);">
+    
+    <!-- Background Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 0, 0, 0.4); z-index: -1; border-radius: 8px;"></div>
+
+    <!-- Profile Picture -->
+    <div style="flex: 0 0 auto; width: 300px; height: 300px; border-radius: 50%; overflow: hidden; position: relative;">
+      <img src="../../images/David_External.jpg" alt="Profile Picture" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+
+    <!-- Profile Information -->
+    <div style="flex: 1 1 auto; text-align: left;">
+      <h1 style="font-size: 24px; margin-bottom: 10px;">David Rex</h1>
+      <p style="font-size: 18px; line-height: 1.5; margin: 5px 0;">
+        <strong>Status:</strong> My boy<br>
+        <strong>Nickname:</strong> Dabid<br>
+        <strong>Location:</strong> Philippines, Laguna<br>
+        <strong>Age:</strong> 21<br>
+        <strong>First Meeting:</strong> 2021/08/08<br>
+        <strong>Find me on:</strong> <a href="#" style="color: #007bff; text-decoration: none;">Facebook</a><br>
+        <strong>Follow me on:</strong> <a href="#" style="color: #007bff; text-decoration: none;">Twitter</a>
+      </p>
+    </div>
+
+    <!-- Additional Text -->
+    <div style="flex: 1 1 100%; text-align: left; margin-top: 20px;">
+      <p style="font-size: 16px; line-height: 1.5; margin: 5px 0;">
+        Starting my first year at St. Luke's College of Nursing, part of Trinity University of Asia, I'm diving into a new chapter both academically and personally. Standing at 5'1, I bring my passion for volleyball as a libero, combining athleticism with a love for the game. Beyond sports, I'm drawn to soft-hearted gentlemen who balance their interests in sports or music with genuine sensitivity. While I'm eager to meet new people and open to mingling, I tend to be on the shy side when it comes to navigating the dating scene.
+      </p>
+      <p style="font-size: 16px; line-height: 1.5; margin: 5px 0;">
+        Navigating college life is exhilarating yet challenging, and I'm embracing the opportunities to grow academically and socially. At St. Luke's, I look forward to immersing myself in the nursing program while also exploring extracurricular interests. In my quest for companionship, I hope to find someone who respects my heart and shares my interests, making meaningful connections in an environment that values both intellect and compassion.
+      </p>
+    </div>
+
+    <!-- Friends Link -->
+    <div style="position: absolute; top: calc(100% + -630px); left: calc(100% + 20px); z-index: 1000; background-color: #ffffff; padding: 10px 20px; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; text-decoration: none; color: #007bff;" onmouseover="this.style.transform = 'translateX(-10px)';" onmouseout="this.style.transform = 'translateX(0)';">
+      <a href="index.html" style="text-decoration: none; color: #007bff;">Friends</a>
+    </div>
+  </div>
+
+</body>
+</html>

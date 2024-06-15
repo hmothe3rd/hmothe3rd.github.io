@@ -26,15 +26,15 @@
             gap: 20px;
             flex-wrap: wrap;
             position: relative;
-            margin-top: 100px; /* Adjust as needed */
+            margin-top: 100px; 
         }
 
         .flip-card {
             width: 350px;
             height: 450px;
-            perspective: 1000px; /* Add perspective for 3D effect */
+            perspective: 1000px; 
             position: relative;
-            cursor: pointer; /* Cursor changes to pointer on hover */
+            cursor: pointer; 
             margin: 10px;
         }
 
@@ -47,7 +47,7 @@
         }
 
         .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg); /* Rotate card on hover to reveal back face */
+            transform: rotateY(180deg); 
         }
 
         .flip-card-front, .flip-card-back {
@@ -69,12 +69,12 @@
 
         .flip-card-front {
             background-color: #ffffff;
-            cursor: pointer; /* Ensure cursor is pointer on front face */
+            cursor: pointer; 
         }
 
         .flip-card-back {
             background-color: #f0f0f0;
-            transform: rotateY(180deg); /* Initially hidden */
+            transform: rotateY(180deg); 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -91,18 +91,17 @@
             object-fit: cover;
         }
 
-        /* Poker Cards Fan Hold Styles */
         .card-container.poker {
-            margin-top: 50px; /* Adjusted margin-top */
-            gap: -80px; /* Adjusted gap to overlap cards */
+            margin-top: 50px; 
+            gap: -80px; 
             overflow: visible;
             justify-content: center;
         }
 
         .card.poker {
-            width: 300px; /* Adjust card width */
-            height: 360px; /* Adjust card height */
-            font-size: 32px; /* Adjust font size */
+            width: 300px; 
+            height: 360px; 
+            font-size: 32px; 
             line-height: 180px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -113,23 +112,21 @@
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
 
-        /* Adjusted transform and z-index for individual cards */
         #card1.poker {
             transform: translateX(70px) rotate(-5deg);
-            z-index: 2; /* Ensure it's behind card 2 */
+            z-index: 2; 
         }
 
         #card2.poker {
-            transform: translateX(0) rotate(2deg); /* Adjusted transform */
-            z-index: 3; /* Ensure it's in front of card 1 */
+            transform: translateX(0) rotate(2deg); 
+            z-index: 3; 
         }
 
         #card3.poker {
             transform: translateX(-70px) rotate(5deg);
-            z-index: 2; /* Ensure it's behind card 2 */
+            z-index: 2; 
         }
 
-        /* Example hover effect for cards */
         #card1.poker:hover {
             transform: translateY(-25px) rotate(0deg) scale(1.1);
         }
@@ -142,7 +139,6 @@
             transform: translateY(-25px) rotate(0deg) scale(1.1);
         }
 
-        /* Link style for card content */
         .card-link {
             text-decoration: none;
             color: blue;
@@ -153,11 +149,9 @@
 <body>
     <h1>Pick a card any card</h1>
     <div class="card-container poker">
-        <!-- Card 1 -->
         <div class="flip-card poker" id="card1">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <!-- Placeholder image for Card 1 -->
                     <img src="../../images/David_Front_External.jpg" alt="Friend 1" class="card-image">
                 </div>
                 <div class="flip-card-back">
@@ -168,11 +162,9 @@
             </div>
         </div>
 
-        <!-- Card 2 -->
         <div class="flip-card poker" id="card2">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <!-- Placeholder image for Card 2 -->
                     <img src="../../images/Gio_Front_External.jpg" alt="Friend 2" class="card-image">
                 </div>
                 <div class="flip-card-back">
@@ -183,11 +175,9 @@
             </div>
         </div>
 
-        <!-- Card 3 -->
         <div class="flip-card poker" id="card3">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <!-- Image for Card 3 -->
                     <img src="../../images/leyan_Front_External.jpg" alt="Friend 3" class="card-image">
                 </div>
                 <div class="flip-card-back">

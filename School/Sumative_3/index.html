@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMaster Bootcamp</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+
+        .jumbotron {
+            position: relative;
+            background-image: url('../../images/jumbo.webp');
+            background-size: cover;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 100px 0;
+            overflow: hidden; /* Ensure content within jumbotron does not overflow */
+        }
+
+        .jumbotron-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            z-index: 1; /* Place overlay above background image */
+        }
+
+        .jumbotron-content {
+            position: relative;
+            z-index: 2; /* Place content above the overlay */
+        }
+
+        .jumbotron h1 {
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+        }
+
+        .jumbotron p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+        }
+
+        .feature {
+            background-color: #0000002e;
+            padding: 20px;
+            border-radius: 1px;
+            margin-bottom: 10px;
+        }
+
+        .services,
+        .testimonials,
+        .contact-form {
+            padding: 40px 0;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .contact-background {
+            background-color: #373e44ca;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        /* Add padding to sections to account for fixed navbar */
+        #home,
+        #features,
+        #services,
+        #testimonials,
+        #contact {
+            padding-top: 56px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">CodeMaster</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid" id="home">
+        <div class="jumbotron-overlay"></div> <!-- Overlay for shadow effect -->
+        <div class="container jumbotron-content">
+            <h1 class="display-4">Become a Coding Pro with CodeMaster</h1>
+            <p class="lead">Join our bootcamp and transform your career in just 12 weeks.</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container" id="features">
+        <h2 class="text-center mb-4">Features</h2>
+        <div class="row">
+            <div class="col-md-4 feature text-center">
+                <h4>Expert Instructors</h4>
+                <p>Learn from industry experts who have a wealth of knowledge and experience.</p>
+            </div>
+            <div class="col-md-4 feature text-center">
+                <h4>Hands-On Projects</h4>
+                <p>Gain practical experience by working on real-world projects.</p>
+            </div>
+            <div class="col-md-4 feature text-center">
+                <h4>Career Support</h4>
+                <p>Receive career guidance and job placement assistance.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="container services" id="services">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="../../images/java.png" class="mb-3" alt="Service 1" style="width: 80%; height: 290px;">
+                <h4>JavaScript</h4>
+                <p>JavaScript, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="../../images/html.png" class="mb-3" alt="Service 2" style="width: 80%; height: 290px;">
+                <h4>HTML</h4>
+                <p>HyperText Markup Language is the standard markup language for documents designed to be displayed in a web browser.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="../../images/C.png" class="mb-3" alt="Service 3" style="width: 80%; height: 290px;">
+                <h4>C++</h4>
+                <p>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="container testimonials" id="testimonials">
+        <h2 class="text-center mb-4">What Our Students Say</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">"CodeMaster transformed my career. The instructors were amazing and the
+                            curriculum was top-notch."</p>
+                        <footer class="blockquote-footer">John Doe</footer>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">"I landed my dream job thanks to CodeMaster. The hands-on projects were
+                            invaluable."</p>
+                        <footer class="blockquote-footer">Jane Smith</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container contact-form contact-background" id="contact">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 CodeMaster. All Rights Reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Additional JavaScript -->
+    <script>
+        $(document).ready(function () {
+            $('form').on('submit', function (e) {
+                e.preventDefault();
+                alert('Thank you for contacting us, ' + $('#name').val() + '! We will get back to you shortly.');
+                $(this).trigger('reset');
+            });
+        });
+    </script>
+</body>
+
+</html>

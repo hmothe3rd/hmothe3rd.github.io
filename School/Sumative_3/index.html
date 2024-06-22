@@ -19,7 +19,7 @@
             color: rgb(255, 255, 255);
             text-align: center;
             padding: 100px 0;
-            overflow: hidden; /* Ensure content within jumbotron does not overflow */
+            overflow: hidden; 
         }
 
         .jumbotron-overlay {
@@ -28,24 +28,24 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-            z-index: 1; /* Place overlay above background image */
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 1; 
         }
 
         .jumbotron-content {
             position: relative;
-            z-index: 2; /* Place content above the overlay */
+            z-index: 2; 
         }
 
         .jumbotron h1 {
             font-size: 3.5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
         }
 
         .jumbotron p {
             font-size: 1.5rem;
             margin-bottom: 2rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
         }
 
         .feature {
@@ -75,7 +75,6 @@
             text-align: center;
         }
 
-        /* Add padding to sections to account for fixed navbar */
         #home,
         #features,
         #services,
@@ -87,7 +86,6 @@
 </head>
 
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">CodeMaster</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -115,9 +113,8 @@
         </div>
     </nav>
 
-    <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid" id="home">
-        <div class="jumbotron-overlay"></div> <!-- Overlay for shadow effect -->
+        <div class="jumbotron-overlay"></div> 
         <div class="container jumbotron-content">
             <h1 class="display-4">Become a Coding Pro with CodeMaster</h1>
             <p class="lead">Join our bootcamp and transform your career in just 12 weeks.</p>
@@ -125,7 +122,6 @@
         </div>
     </div>
 
-    <!-- Features Section -->
     <div class="container" id="features">
         <h2 class="text-center mb-4">Features</h2>
         <div class="row">
@@ -144,7 +140,6 @@
         </div>
     </div>
 
-    <!-- Services Section -->
     <div class="container services" id="services">
         <h2 class="text-center mb-4">Our Services</h2>
         <div class="row">
@@ -166,7 +161,6 @@
         </div>
     </div>
 
-    <!-- Testimonials Section -->
     <div class="container testimonials" id="testimonials">
         <h2 class="text-center mb-4">What Our Students Say</h2>
         <div class="row">
@@ -191,7 +185,6 @@
         </div>
     </div>
 
-    <!-- Contact Section -->
     <div class="container contact-form contact-background" id="contact">
         <h2 class="text-center mb-4">Contact Us</h2>
         <div class="row">
@@ -215,16 +208,13 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <div class="footer">
         <p>&copy; 2024 CodeMaster. All Rights Reserved.</p>
     </div>
 
-    <!-- Bootstrap JS, Popper.js, and jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Additional JavaScript -->
     <script>
         $(document).ready(function () {
             $('form').on('submit', function (e) {

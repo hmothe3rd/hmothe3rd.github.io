@@ -1,0 +1,201 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('../../images/Feu_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container {
+    --bg-x: 39%;
+    --bg-y: 6%;
+    width: 200px;
+    height: 200px;
+    background-image: url('../../images/Far_Easter_University_Logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: var(--bg-y);
+    left: var(--bg-x);
+}
+
+.container {
+    width: 90%;
+    max-width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    font-size: 14px;
+    position: relative;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; /* Adjust the height of the line */
+    background-color: white; /* Color of the line */
+}
+
+
+.container h1 {
+    color: #0f2027;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-button {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    padding: 8px 16px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
+    /* outline: 1px dashed black; */
+}
+
+.additional-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.additional-links label {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
+    color: #f0f0f0;
+}
+
+.additional-links .browse-courses-link {
+    position: relative;
+}
+
+.additional-links .browse-courses-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.additional-links .browse-courses-link a:hover {
+    text-decoration: underline;
+    color: #f0f0f0;
+}
+
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password .psw a {
+    color: white;
+    text-decoration: none;
+}
+
+.forgot-password .psw a:hover {
+    text-decoration: underline;
+    color: #f0f0f0;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-control label {
+    color: white;
+    font-weight: bold;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-control input:focus {
+    border-color: #007bff;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
+}
+
+.browse-courses-link {
+    position: absolute;
+    top: var(--browse-courses-y, -295px); /* Adjust top position as needed */
+    left: var(--browse-courses-x, 0%);
+}
+
+.browse-courses-link span {
+    color: white;
+    text-decoration: underline;
+}
+
+.browse-courses-link span a:hover {
+    text-decoration: underline;
+    color: #f0f0f0;
+}
+
+/* Footer styles */
+.footer {
+    position: absolute;
+    top: var(--footer-y, 300px); /* Adjust top position as needed */
+    left: var(--footer-x, 0);
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}

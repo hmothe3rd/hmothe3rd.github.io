@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Buttons with Hover Animation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        #pokemonGo_logo {
+            max-height: 150px;
+            height: auto;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        #download1,
+        #download2,
+        #download3 {
+            height: 45px;
+            max-height: fit-content;
+            transition: transform 0.3s ease-out;
+        }
+
+        #download1:hover,
+        #download2:hover,
+        #download3:hover {
+            transform: scale(1.1); 
+            border: 1px solid white;
+        }
+
+        .download-buttons {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container-md {
+            max-width: 950px;
+            margin: auto;
+            padding: 15px;
+        }
+
+        .container-lg {
+            max-width: 100%;
+            padding: 15px;
+            background: rgb(36, 204, 170);
+            background: linear-gradient(324deg, rgba(36, 204, 170, 1) 44%, rgba(162, 219, 149, 1) 100%);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .text-left {
+                text-align: center !important;
+            }
+
+            .download-buttons {
+                justify-content: center;
+            }
+        }
+
+        .col-md-6 {
+            padding: 0 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-lg">
+        <div class="container-md">
+            <div class="container text-right my-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center">
+                        <img src="https://logos-download.com/wp-content/uploads/2016/07/Pok%C3%A9mon_Go_logo.png"
+                            id="pokemonGo_logo" class="rounded" alt="pokemonGo_logo">
+                    </div>
+                    <div class="col-md-6 text-left text-center-md">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Get Up and GO</h3>
+                                <h3>Download Today!</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="download-buttons">
+                                    <a href="https://apps.apple.com/vc/app/pok%C3%A9mon-go/id1094591345">
+                                        <img src="https://i.postimg.cc/ncMP8kDs/xdgxq9cg.png" id="download1"
+                                            class="rounded p-1" alt="download3">
+                                    </a>
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&pli=1">
+                                        <img src="https://i.postimg.cc/MKCT8ngw/fda8irf9.png" id="download2"
+                                            class="rounded p-1" alt="download1">
+                                    </a>
+                                    <a href="https://galaxystore.samsung.com/detail/com.nianticlabs.pokemongo.ares">
+                                        <img src="https://i.postimg.cc/ZRpB1rK1/kri31dhu.png" id="download3"
+                                            class="rounded p-1" alt="download2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

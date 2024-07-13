@@ -79,7 +79,7 @@ const validateInputs = () => {
     }
 
     if (isValid) {
-        window.location.href = 'login.html'; 
+        window.location.href = "https://melow04.github.io/project/index.html"; 
     }
 
     return isValid;

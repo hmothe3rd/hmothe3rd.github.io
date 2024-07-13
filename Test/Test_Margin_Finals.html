@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Margin with White Background</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black; /* This makes the margin area black */
+            margin: 0px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure the body covers the full viewport height */
+        }
+        .container-custom {
+            background-color: white;
+            border: 2px solid black; /* Optional: add a black border inside the white area */
+            padding: 20px; /* Adjust padding as needed */
+            height: 60vh;
+            width: 98%; /* Full width */
+            max-width: 100%; /* Ensure no max width */
+            box-sizing: border-box; /* Includes padding and border in the width */
+            outline: 2px dashed purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <img>
+        <div class="container-custom mx-auto">
+            <img src= "../images/Buff.jpg" alt="Pokémon Go">
+            <p>This area is white with a black margin outside.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Go Login</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .custom-container {
+            background-color: white;
+            border: 2px solid white;
+            padding: 20px;
+            text-align: start;
+            color: black;
+            height: 90vh; /* Adjust height here */
+            width: 97%;
+            max-width: 100%;
+            overflow-y: auto;
+            position: relative;
+            box-sizing: border-box; /* Includes padding and border in the width */
+            margin-right: -23px; /* Adjust right margin as needed */
+        }
+        .picture-area {
+            height: 100%; /* Match the height of custom-container */
+            width: 97%; /* Full width */
+            max-width: 100%;
+            overflow: hidden; /* Hide any overflowing content */
+            position: relative;
+            margin-right: 23px; /* Adjust right margin as needed */
+        }
+        .picture-area img {
+            width: 100%; /* Adjust width to fill container */
+            height: 100%; /* Adjust height to fill container */
+            object-fit: cover; /* Maintain aspect ratio and cover container */
+            display: block; /* Remove extra space below image */
+        }
+        /* Adjust padding of col-md-6 */
+        .col-md-6 {
+            padding: 0; /* Adjust padding between columns */
+        }
+        .progress-bar {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .progress {
+            flex: 1;
+            height: 10px;
+            margin-right: 5px;
+        }
+        .progress.red {
+            background-color: red;
+        }
+        .progress.blue {
+            background-color: blue;
+        }
+        .progress.yellow {
+            background-color: yellow;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center p-0"> <!-- Remove default padding -->
+                <div class="custom-container">
+                    <h1>Log In</h1>
+                    <p>and join millions of Pokémon Trainers!</p>
+                    <div class="progress-bar">
+                        <div class="progress red"></div>
+                        <div class="progress blue"></div>
+                        <div class="progress yellow"></div>
+                    </div>
+                    <p>Simply fill in to get started!</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Log In</button>
+                    </form>
+                    <div class="alt-login">
+                        <p>Log in with:</p>
+                        <div class="social-icons">
+                            <a href="#"><img src="google-icon.png" alt="Google"></a>
+                            <a href="#"><img src="apple-icon.png" alt="Apple"></a>
+                            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                        </div>
+                    </div>
+                    <p class="footer">© 2024 Niantic, Inc. Pokémon and Pokémon character names are trademarks of Nintendo, Creatures, and GAME FREAK. Pokémon GO is a trademark of Niantic Inc. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center p-0"> <!-- Remove default padding -->
+                <div class="picture-area">
+                    <img src="../../images/pokemon-go-kalos.avif" alt="Pokémon Go">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
